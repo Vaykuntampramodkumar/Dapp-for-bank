@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thulasi trust Bank</title>
+    <style>
+                     body {
+            background-image: url("data:image/jpeg;base64,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");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+          }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f3f3;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            margin-bottom: 20px;
+        }
+        input[type="number"] {
+            padding: 8px;
+            margin-right: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+        button {
+            padding: 8px 20px;
+            border-radius: 5px;
+            border: none;
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .loading {
+            display: none;
+        }
+        .loading.active {
+            display: block;
+        }
+        .loader {
+            border: 4px solid rgba(0, 0, 0, 0.1);
+            border-top: 4px solid #007bff;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            animation: spin 1s linear infinite;
+            margin: 20px auto;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Thulasi trust bank</h1>
+        <p>Balance: <span id="balance">Loading...</span> rs</p>
+        <input type="number" id="amount" placeholder="Enter Amount">
+        <button onclick="deposit()">Deposit</button>
+        <button onclick="withdraw()">Withdraw</button>
+        <button  onclick="goBack()">Go Back</button>
+    
+        <div class="loading" id="loading">
+            <div class="loader"></div>
+            <p>Loading...</p>
+        </div>
+        <button onclick="showDetails()">Show Details</button>
+
+        <div id="accountDetails" style="display: none;">
+            <p><strong>Account Address:</strong> <span id="accountAddress"></span></p>
+        </div>
+    </div>
+
+    <script>
+        // Connect to the Ethereum network
+        async function connect() {
+            if (window.ethereum) {
+                window.web3 = new Web3(ethereum);
+                try {
+                    await ethereum.enable();
+                    return true;
+                } catch (error) {
+                    console.error(error);
+                    return false;
+                }
+            } else {
+                console.error("Please install MetaMask to use this DApp");
+                return false;
+            }
+        }
+
+        // Contract ABI
+        const contractABI = [
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "amount",
+				"type": "uint256"
+			}
+		],
+		"name": "deposit",
+		"outputs": [],
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "amount",
+				"type": "uint256"
+			}
+		],
+		"name": "withdraw",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getBalance",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+]
+            ;
+
+        // Contract Address
+        const contractAddress = '0x63F61761d8a557577f8E0B620Ad923308e18a0f3';
+
+        // Contract instance
+        let contractInstance;
+
+        async function init() {
+            if (await connect()) {
+                contractInstance = new web3.eth.Contract(contractABI, contractAddress);
+                updateBalance();
+            }
+        }
+
+        async function updateBalance() {
+            const loading = document.getElementById('loading');
+            const balanceElement = document.getElementById('balance');
+            loading.classList.add('active');
+            const balance = await contractInstance.methods.getBalance().call();
+            balanceElement.innerText = balance;
+            loading.classList.remove('active');
+
+            // Show account details
+            const accountAddress = document.getElementById('accountAddress');
+            accountAddress.innerText = ethereum.selectedAddress;
+            document.getElementById('accountDetails').style.display = 'block';
+        }
+
+        async function deposit() {
+            const amount = document.getElementById('amount').value;
+            const loading = document.getElementById('loading');
+            loading.classList.add('active');
+            await contractInstance.methods.deposit(amount).send({ from: ethereum.selectedAddress, value: amount });
+            updateBalance();
+            loading.classList.remove('active');
+        }
+
+        async function withdraw() {
+            const amount = document.getElementById('amount').value;
+            const loading = document.getElementById('loading');
+            loading.classList.add('active');
+            await contractInstance.methods.withdraw(amount).send({ from: ethereum.selectedAddress });
+            updateBalance();
+            loading.classList.remove('active');
+        }
+        async function showDetails() {
+    const accountDetails = document.getElementById('accountDetails');
+    if (accountDetails.style.display === 'none') {
+        accountDetails.style.display = 'block';
+    } else {
+        accountDetails.style.display = 'none';
+    }
+}
+
+
+function goBack() {
+    window.history.back(); // Navigate back to the previous page
+}
+
+
+        window.onload = init;
+    </script>
+    <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js/dist/web3.min.js"></script>
+</body>
+</html>
