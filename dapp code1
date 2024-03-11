@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extra Web Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: blue;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        h1 {
+            color: whitesmoke;
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 32px;
+        }
+        h2 {
+            color: gold;
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 45px;
+        }
+        p {
+            color: whitesmoke;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        marquee {
+            color: white;
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 40px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-bottom: 10px; /* Added margin for spacing */
+        }
+        button:hover {
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the Thulasi Trust bank</h1>
+    <p>This is the page where you will be informed about instructions </p>
+    
+    <marquee>For any queries and Information please contact "7780142033" 24x7 toll-free </marquee>
+    <h2>Your trust is our wealth</h2>
+    <p>Click the button below to go to the Thulasi Trust Bank web page</p>
+    <button onclick="goToThulasiTrustBank()">Go to Main Page</button>
+    <button onclick="exitPage()">Exit</button> <!-- Added exit button -->
+    
+    <script>
+        function goToThulasiTrustBank() {
+            // Replace 'original-web-page-url' with the actual URL of the Thulasi Trust Bank web page
+            window.location.href = 'http://127.0.0.1:5500/DAPP/dynamic.html';
+        }
+
+        function exitPage() {
+            window.close(); // Closes the current window or tab
+        }
+    </script>
+</body>
+</html>
